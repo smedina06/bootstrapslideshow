@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 .carousel {
   margin-top: 1em;
   display: flex;
@@ -9,9 +16,37 @@
   max-width: 800px;
 }
 
-/*media query*/
-@media (max-width: 800px) {
+.header {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+ display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: auto;
+  justify-content: center;
+}
+
+/* media query */
+@media (max-width: 700px) {
   .carousel-item img {
     max-width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo {
+    width: 60px;
+  }
+
+  .header-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .content {
+    margin: 10px;
+    padding: 15px;
   }
 }
